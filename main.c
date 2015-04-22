@@ -21,13 +21,12 @@ struct s_studente
 };
 
 typedef struct s_studente studente;
-struct s_studente alunno;
-int i;
-FILE *puntaFile;
 
 int main(int argc, char** argv)
 {
-    
+    studente alunno;
+    int i;
+    FILE *puntaFile; 
     
     printf("Inserisci %d di alunni.\n", N);
     puntaFile=fopen("elenco.dat","wb");
@@ -49,7 +48,8 @@ int main(int argc, char** argv)
         }
     
     int fclose(FILE *puntaFile);
-}
+    }
+    
     else
       printf("Non riesco ad aprire il file.");
         
