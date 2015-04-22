@@ -16,7 +16,7 @@ struct s_studente
 {
     char nome[MAX_STRLEN+1];
     char cognome[MAX_STRLEN+1];
-    int eta;
+    unsigned int eta;
     char classe[MAX_STRLEN+1];
 };
 
